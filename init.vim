@@ -1,6 +1,8 @@
 call plug#begin()
  " Plugin Section
- Plug 'dracula/vim'
+ Plug 'nvim-lua/plenary.nvim'
+ Plug 'jose-elias-alvarez/null-ls.nvim'
+ Plug 'MunifTanjim/prettier.nvim'
  Plug 'ryanoasis/vim-devicons'
  Plug 'SirVer/ultisnips'
  Plug 'honza/vim-snippets'
@@ -8,6 +10,7 @@ call plug#begin()
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'nvim-lua/plenary.nvim'
 call plug#end()
 
 set nocompatible            " disable compatibility to old-time vi
@@ -34,3 +37,9 @@ set ttyfast                 " Speed up scrolling in Vim
 " set spell                 " enable spell check (may need to download language package)
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim " Directory to store backup files.
+
+" Start NERDTree and leave the cursor in it.
+autocmd VimEnter * NERDTree
+
+
+
