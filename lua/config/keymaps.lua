@@ -12,7 +12,7 @@ vim.api.nvim_set_keymap("n", "K", "J", { noremap = true })
 
 -- Remap up movement to 'l'
 vim.api.nvim_set_keymap("n", "l", "k", { noremap = true })
-vim.api.nvim_set_keymap("n", "L", "K", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "L", "K", { noremap = true })
 
 -- Remap right movement to 'ö'
 vim.api.nvim_set_keymap("n", "ö", "l", { noremap = true })

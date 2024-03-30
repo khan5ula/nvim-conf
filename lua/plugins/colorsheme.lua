@@ -8,7 +8,7 @@ return {
         sidebars = "transparent",
         floats = "transparent",
       },
-      style = "storm",
+      style = "night",
     },
   },
 
