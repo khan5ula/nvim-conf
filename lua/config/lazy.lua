@@ -45,19 +45,4 @@ require("lazy").setup({
   },
 })
 
-require("neo-tree").setup({
-  window = {
-    position = "right", -- This sets the tree to appear on the right
-  },
-  filesystem = {
-    filtered_items = {
-      --visible = true,
-      hide_dotfiles = false,
-      hide_by_name = {
-        ".github",
-        ".git",
-        "package-lock.json",
-      },
-    },
-  },
-})
+require("config.neo-tree")
